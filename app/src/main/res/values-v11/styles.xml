@@ -1,0 +1,8 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="Compat.AppTheme" parent="@style/Base.Compat.AppTheme">
+        <item name="android:datePickerStyle">@style/AppTheme.Widget.DatePicker</item>
+    </style>
+    <style name="AppCompat.Theme.AppTheme.Dialog.Alert" parent="@style/Base.AppCompat.Theme.AppTheme.Dialog.Alert">
+        <item name="android:datePickerStyle">@style/AppTheme.Widget.DatePicker</item>
+    </style>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="layout_padding">16dp</dimen>
+    <dimen name="welcome_fragment_reallocate_logo_size">40dp</dimen>
+    <dimen name="authentication_reallocate_logo_margin_bottom">@dimen/layout_padding</dimen>
+    <dimen name="authentication_button_main_text_size">16sp</dimen>
+    <dimen name="btn_bevelled_corner">40dp</dimen>
+</resources>

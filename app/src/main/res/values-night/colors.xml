@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="tab_indicator">@color/colorAccent</color>-->
+    <color name="text_color_primary">@color/text_color_primary_light</color>
+    <color name="text_color_secondary">@color/text_color_secondary_light</color>
+    <color name="icon_inactive_color">@color/icon_inactive_color_light</color>
+    <color name="icon_active_color">@color/icon_active_color_light</color>
+    <color name="appbar_background">#212121</color>
+    <color name="background_1">#424242</color>
+    <color name="background_2">#303030</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="background_1_light">#515151</color>
+    <color name="rundl_item_divider_background">@color/material_divider_background</color>
+    <color name="material_divider_background">#1FFFFFFF</color>
+    <color name="request_waiting_background">#838362</color> <!-- TODO: I just typed in a arbitrary value -->
+    <color name="comment_background">@color/background_1_light</color> <!-- TODO: I just typed in a arbitrary value -->
+    <color name="toolbar_background">#212121</color>
+    <color name="toolbar_scrim_color">@color/toolbar_background</color>
+    <color name="tab_indicator">@color/colorAccent</color>
+    <color name="rundl_request_background">#798C9C</color>
+    <color name="item_selected">@color/background_1_light</color>
+    <color name="dialog_toolbar_background">@color/toolbar_background</color>
+    <color name="date_time_picker_toolbar_background">@color/dialog_toolbar_background</color>
+</resources>

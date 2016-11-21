@@ -1,0 +1,33 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="AppTheme" parent="@style/Base.AppTheme">
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <!-- enable window content transitions -->
+        <item name="android:windowContentTransitions">true</item>
+        <!-- specify shared element transitions -->
+        <item name="android:windowSharedElementEnterTransition">@transition/change_image_transition</item>
+        <item name="android:windowSharedElementExitTransition">@transition/change_image_transition</item>
+    </style>
+    <style name="Theme.AppTheme.Dialog.Alert" parent="@style/Base.Theme.AppTheme.Dialog.Alert">
+        <item name="android:timePickerStyle">@style/AppTheme.Widget.TimePicker</item>
+    </style>
+    <style name="AppTheme.White.NoActionBar" parent="@style/Base.AppTheme.White.NoActionBar"/>
+    <style name="AppTheme.White.NoActionBar.NoStatusBar" parent="@style/Base.AppTheme.White.NoActionBar.NoStatusBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="ThemeOverlay.AppTheme.AppBarOverlay.Transparent" parent="@style/Base.ThemeOverlay.AppTheme.AppBarOverlay.Transparent">
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <style name="ThemeOverlay.AppTheme.PopupOverlay.Transparent" parent="@style/Base.ThemeOverlay.AppTheme.PopupOverlay.Transparent">
+        <item name="android:elevation">0dp</item>
+    </style>
+    <style name="Base.AppTheme.Widget.TimePicker" parent="@android:style/Widget.Material.TimePicker">
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:headerBackground">@color/colorPrimary</item>
+    </style>
+    <style name="AppTheme.Widget.TimePicker" parent="@style/Base.AppTheme.Widget.TimePicker"/>
+</resources>

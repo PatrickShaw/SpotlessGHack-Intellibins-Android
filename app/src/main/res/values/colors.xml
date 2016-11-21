@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="btn_raised_bevelled_primary_text">@color/text_color_primary_light</color>
+    <color name="btn_raised_bevelled_primary_normal">@color/colorPrimary</color>
+    <color name="btn_raised_bevelled_primary_pressed">@color/colorAccent</color>
+    <color name="appbar_background">@color/colorPrimary</color>
+    <color name="activity_background_non_card">@color/background_1</color>
+    <color name="activity_background_card">@color/background_2</color>
+    <color name="text_color_primary_light">#FFFFFF</color>
+    <color name="text_color_secondary_light">#B3FFFFFF</color>
+    <color name="text_color_primary_dark">#DE000000</color>
+    <color name="text_color_secondary_dark">#8A000000</color>
+    <color name="text_color_primary">@color/text_color_primary_dark</color>
+    <color name="text_color_secondary">@color/text_color_secondary_dark</color>
+    <color name="icon_inactive_color_dark">#61000000</color>
+    <color name="icon_active_color_dark">#8A000000</color>
+    <color name="icon_inactive_color_light">#80FFFFFF</color>
+    <color name="icon_active_color_light">#FFFFFF</color>
+    <color name="icon_inactive_color">@color/icon_inactive_color_dark</color>
+    <color name="icon_active_color">@color/icon_active_color_dark</color>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#82B1FF</color>
+    <color name="background_1">#FFFFFF</color>
+    <color name="background_2">#FAFAFA</color>
+    <color name="nav_body_background">@color/background_1</color>
+    <color name="date_time_picker_toolbar_background">@color/colorPrimary</color>
+</resources>

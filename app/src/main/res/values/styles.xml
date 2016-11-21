@@ -1,0 +1,98 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="Base.Compat.AppTheme" parent="Theme.AppCompat.DayNight">
+        <item name="preferenceTheme">@style/AppTheme.PreferenceThemeOverlay</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/activity_background_card</item>
+    </style>
+    <style name="AppTheme.Button.Borderless" parent="Widget.AppCompat.Button.Borderless"/>
+    <style name="Compat.AppTheme" parent="Base.Compat.AppTheme"/>
+    <style name="Base.AppTheme" parent="Compat.AppTheme"/>
+    <style name="Base.Theme.AppTheme.Dialog" parent="@style/Theme.AppCompat.DayNight.Dialog">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="Base.AppCompat.Theme.AppTheme.Dialog.Alert" parent="@style/Theme.AppCompat.DayNight.Dialog.Alert">
+        <item name="android:alertDialogStyle">@style/AppTheme.Dialog.Alert</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppCompat.Theme.AppTheme.Dialog.Alert" parent="Base.AppCompat.Theme.AppTheme.Dialog.Alert"/>
+    <style name="Base.AppTheme.Dialog.Alert" parent="@style/AlertDialog.AppCompat">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="Base.Theme.AppTheme.Dialog.Alert" parent ="@style/AppCompat.Theme.AppTheme.Dialog.Alert"/>
+
+    <style name="Base.AppTheme.Widget.DatePicker" parent="@style/AppTheme.Dialog.Alert">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:headerBackground">@color/date_time_picker_toolbar_background</item>
+    </style>
+    <style name="Base.AppTheme.Empty" parent="@style/AppTheme">
+        <item name="android:windowBackground">@null</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Base.AppTheme.NoActionBar" parent="@style/AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Base.AppTheme.White" parent="@style/AppTheme">
+        <item name="android:windowBackground">@color/activity_background_non_card</item>
+    </style>
+    <style name="Base.AppTheme.White.NoActionBar" parent="@style/AppTheme.White">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Base.ThemeOverlay.AppTheme.AppBarOverlay.Transparent" parent="@style/ThemeOverlay.AppCompat.Dark">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="Base.ThemeOverlay.AppTheme.PopupOverlay.Transparent" parent="@style/ThemeOverlay.AppCompat.Light">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="Base.ThemeOverlay.AppTheme.AppBarOverlay.Dialog" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@color/dialog_toolbar_background</item>
+    </style>
+    <style name="AppBarOverlay">
+        <item name="android:background">@color/appbar_background</item>
+    </style>
+    <style name="Base.ThemeOverlay.AppTheme.AppBarOverlay" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    </style>
+    <style name="Base.ThemeOverlay.AppTheme.PopupOverlay" parent="@style/ThemeOverlay.AppCompat.Light">
+    </style>
+    <style name="Base.ThemeOverlay.AppTheme.TabLayout" parent="@style/Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/tab_indicator</item>
+    </style>
+    <style name="Base.AppTheme.White.NoActionBar.NoStatusBar"/>
+    <style name="Base.AppTheme.Toolbar" parent="@style/Theme.AppCompat.DayNight.DarkActionBar"/>
+    <style name="Base.AppTheme.PreferenceThemeOverlay" parent="@style/PreferenceThemeOverlay">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme" parent="@style/Base.AppTheme" />
+    <style name="AppTheme.Empty" parent="@style/Base.AppTheme.Empty"/>
+    <style name="AppTheme.NoActionBar" parent ="@style/Base.AppTheme.NoActionBar"/>
+    <style name="AppTheme.White" parent="@style/Base.AppTheme.White"/>
+    <style name="AppTheme.White.NoActionBar" parent="@style/Base.AppTheme.White.NoActionBar"/>
+    <style name="AppTheme.White.NoStatusBar" parent="@style/Base.AppTheme.White.NoActionBar.NoStatusBar"/>
+    <style name="AppTheme.PreferenceThemeOverlay" parent="@style/Base.AppTheme.PreferenceThemeOverlay"/>
+    <style name="AppTheme.Toolbar" parent="@style/Base.AppTheme.Toolbar"/>
+    <style name="AppTheme.Dialog.Alert" parent="@style/Base.AppTheme.Dialog.Alert"/>
+    <style name="AppTheme.Widget.DatePicker" parent="@style/Base.AppTheme.Widget.DatePicker"/>
+    <style name="ThemeOverlay.AppTheme.AppBarOverlay.Transparent" parent="@style/Base.ThemeOverlay.AppTheme.AppBarOverlay.Transparent"/>
+    <style name="ThemeOverlay.AppTheme.PopupOverlay.Transparent" parent="@style/Base.ThemeOverlay.AppTheme.PopupOverlay.Transparent"/>
+    <style name="ThemeOverlay.AppTheme.AppBarOverlay.Dialog" parent="@style/Base.ThemeOverlay.AppTheme.AppBarOverlay.Dialog"/>
+    <style name="ThemeOverlay.AppTheme.AppBarOverlay" parent="@style/Base.ThemeOverlay.AppTheme.AppBarOverlay"/>
+    <style name="ThemeOverlay.AppTheme.PopupOverlay" parent="@style/Base.ThemeOverlay.AppTheme.PopupOverlay"/>
+    <style name="ThemeOverlay.AppTheme.TabLayout" parent="@style/Base.ThemeOverlay.AppTheme.TabLayout"/>
+    <style name="Theme.AppTheme.Dialog" parent="@style/Base.Theme.AppTheme.Dialog"/>
+    <style name="Theme.AppTheme.Dialog.Alert" parent="@style/Base.Theme.AppTheme.Dialog.Alert"/>
+</resources>

@@ -1,0 +1,34 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/layout_container">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/layout_padding"
+        style="@style/AppBarOverlay"
+        android:theme="@style/ThemeOverlay.AppTheme.AppBarOverlay"
+        >
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            app:popupTheme="@style/ThemeOverlay.AppTheme.PopupOverlay"/>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/layout_swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.intellibins.intellibinsandroid.MapsActivity" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</android.support.design.widget.CoordinatorLayout>

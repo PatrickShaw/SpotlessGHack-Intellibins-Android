@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.AppTheme.PreferenceThemeOverlay" parent="@style/PreferenceThemeOverlay.v14.Material">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Base.AppTheme.Widget.DatePicker" parent="@android:style/Widget.DeviceDefault.DatePicker">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:headerBackground">@color/date_time_picker_toolbar_background</item>
+    </style>
+</resources>
