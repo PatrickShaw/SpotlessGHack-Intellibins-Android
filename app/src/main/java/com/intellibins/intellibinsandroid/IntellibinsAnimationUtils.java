@@ -39,7 +39,7 @@ public class IntellibinsAnimationUtils {
     }
 
     public static void toggleVisibility(final boolean showView, View view, int animationTime) {
-        Log.d("ReallocateAnimationUtil", view.getClass().getSimpleName() + " is showing: " + Boolean.toString(showView));
+        Log.d("IntellibinsAnimtil", view.getClass().getSimpleName() + " is showing: " + Boolean.toString(showView));
         view.clearAnimation();
         // If it's already hidden then don't bother
         if(!showView && view.getVisibility() == View.GONE) {

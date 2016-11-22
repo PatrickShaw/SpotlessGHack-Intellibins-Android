@@ -49,7 +49,7 @@ public abstract class DataFragment<T> extends Fragment implements HasData, IsRef
 
         @Override
         public void onDataRetrieved(T requestObject) {
-            Log.d("DataFragment", getClass().getSimpleName() + " retrieved data from the Reallocate server");
+            Log.d("DataFragment", getClass().getSimpleName() + " retrieved data from the Intellibins server");
             mData = requestObject;
             if (mIsCreatedView) {
                 notifyDataRetrieved(requestObject);

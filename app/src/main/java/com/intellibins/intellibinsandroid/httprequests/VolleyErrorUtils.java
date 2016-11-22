@@ -78,7 +78,7 @@ public class VolleyErrorUtils {
                 // TODO: Show this error in the Snackbar if Volley stops showing the weird SSL thing
                 Log.e("VolleyErrorUtils", "Volley error message: " + volleyError.getMessage());
             }
-            errorMessage = MessageFormat.format(messageFormat.replace("'", "''"), itemName, "Can't connect to Reallocate. ");
+            errorMessage = MessageFormat.format(messageFormat.replace("'", "''"), itemName, "Can't connect to Intellibins. ");
             try {
                 if (!IntellibinsApplication.getInstance().isConnected()) {
                     errorMessage += "Are you connected the internet? ";
@@ -87,16 +87,18 @@ public class VolleyErrorUtils {
                 Log.e("SimpleErrorListener", errorMessage, ex);
             }
         }
-        try {
-            errorHandler.onErrorMessageRetrieved(
-                    errorMessage,
-                    "Retry",
-                    retryMethod
-            );
-            Log.e("SimpleErrorListener", "The error was: " + errorMessage);
-        } catch (Exception ex) {
-            Log.e("SimpleErrorListener", "Could not handle error.", ex);
-            Log.e("SimpleErrorListener", "The error was: " + errorMessage);
+        if(errorHandler != null) {
+            try {
+                errorHandler.onErrorMessageRetrieved(
+                        errorMessage,
+                        "Retry",
+                        retryMethod
+                );
+                Log.e("SimpleErrorListener", "The error was: " + errorMessage);
+            } catch (Exception ex) {
+                Log.e("SimpleErrorListener", "Could not handle error.", ex);
+                Log.e("SimpleErrorListener", "The error was: " + errorMessage);
+            }
         }
     }
 }

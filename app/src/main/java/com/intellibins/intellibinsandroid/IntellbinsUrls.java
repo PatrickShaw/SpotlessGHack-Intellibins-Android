@@ -16,7 +16,11 @@ public class IntellbinsUrls {
     private static final String ARG_INDEX = "index=";
     private static final String ARG_COUNT = "count=";
     private static final String UPDATE = "/update";
+    private static final String CLOSEST = "/closest";
     public static String getBinsUrl(int index, int count) {
         return ROUTE_CLIENT + BINS + BEGIN_PARAM + ARG_INDEX + Integer.toString(index) + "&" + ARG_COUNT + Integer.toString(count);
+    }
+    public static String getClosestBinIdUrl() {
+        return ROUTE_CLIENT + CLOSEST;
     }
 }

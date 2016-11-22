@@ -1,6 +1,10 @@
 package com.intellibins.intellibinsandroid;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.os.Build;
+import android.support.v4.content.ContextCompat;
 
 import com.google.gson.Gson;
 import com.intellibins.intellibinsandroid.restdata.Identifiable;
@@ -15,6 +19,9 @@ import java.util.List;
  * @since 22/11/2016
  */
 public class MiscHelper {
+    public static boolean isPermitted(Context context, String permission) {
+        return Build.VERSION.SDK_INT < Build.VERSION_CODES.M || (ContextCompat.checkSelfPermission(context, permission) == PackageManager.PERMISSION_GRANTED);
+    }
     public static <T> T clone (T object, Class<T> clonedClass){
         Gson gson = new Gson();
         return gson.fromJson(gson.toJson(object, clonedClass), clonedClass);
