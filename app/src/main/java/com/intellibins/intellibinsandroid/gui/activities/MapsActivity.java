@@ -141,7 +141,7 @@ public class MapsActivity extends AppCompatActivity implements LocationListener,
                 Drawable drawable = AppCompatResources.getDrawable(this, R.drawable.ic_marker);
                 drawable.setColorFilter(getBlendedColour(smallestBin.full), PorterDuff.Mode.SRC_IN);
                 mImagePin.setImageDrawable(drawable);
-                mTextHeaderTitle.setText(MessageFormat.format("Bin {1} is {2}% full",
+                mTextHeaderTitle.setText(MessageFormat.format("Bin {0} is {1}% full",
                         Integer.toString(smallestBin.getId()),
                         Integer.toString(smallestBin.full)
                 ));
